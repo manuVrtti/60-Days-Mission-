@@ -9,8 +9,12 @@ def count_freq(items):
 
 def filter_stopwords(words):
     common_words = {
-        "a","an","the","and","or","but","is","are","was","were",
-        "in","on","at","to","for","of","with","by","as","from"
+        "a","an","the","and","or","but","if","because","so",
+        "is","are","was","were","be","been","being",
+        "in","on","at","to","for","of","with","by","from",
+        "this","that","these","those",
+        "it","its","they","them","their","you","your",
+        "he","she","his","her","we","our","i","me","my"
     }
     return [w for w in words if w not in common_words]
 
